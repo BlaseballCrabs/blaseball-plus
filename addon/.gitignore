@@ -1,1 +1,3 @@
 *.js
+*.js.*
+web-ext-artifacts/

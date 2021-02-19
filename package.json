@@ -5,11 +5,12 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build:js": "webpack",
-        "build:unsigned:ext": "cd addon && web-ext build",
-        "build:signed:ext": "cd addon && web-ext build",
-        "build:unsigned": "npm run build:js && npm run build:unsigned:ext",
-        "build:signed": "npm run build:js && npm run build:signed:ext",
+        "build:dev:js": "webpack",
+        "build:prod:js": "webpack --env production",
+        "build:unsigned:ext": "cd addon && web-ext build --overwrite-dest",
+        "build:signed:ext": "cd addon && web-ext sign",
+        "build:unsigned": "npm run build:dev:js && npm run build:unsigned:ext",
+        "build:signed": "npm run build:prod:js && npm run build:signed:ext",
         "build": "npm run build:unsigned",
         "start": "webpack watch"
     },

@@ -5,9 +5,9 @@ import WebExtWebpackPlugin from '@leo60228/web-ext-webpack-plugin';
 const cwd = dirname(fileURLToPath(import.meta.url));
 const addonDir = resolve(cwd, 'addon');
 
-const config = {
-    mode: 'development',
-    devtool: 'eval-source-map',
+const config = env => ({
+    mode: env.production ? 'production' : 'development',
+    devtool: env.production ? 'source-map' : 'eval-source-map',
     entry: {
         content_script: './lib/content.js',
     },
@@ -23,6 +23,6 @@ const config = {
             keepProfileChanges: true
         })
     ]
-};
+});
 
 export default config;
