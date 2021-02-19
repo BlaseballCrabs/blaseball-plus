@@ -5,13 +5,14 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build:dev:js": "webpack",
-        "build:prod:js": "webpack --env production",
-        "build:unsigned:ext": "cd addon && web-ext build --overwrite-dest",
-        "build:signed:ext": "cd addon && web-ext sign",
-        "build:unsigned": "yarn run build:dev:js && yarn run build:unsigned:ext",
-        "build:signed": "yarn run build:prod:js && yarn run build:signed:ext",
-        "build": "yarn run build:unsigned",
+        "build:js:dev": "webpack",
+        "build:js:prod": "webpack --env production",
+        "build:ext:unsigned": "cd addon && web-ext build --overwrite-dest",
+        "build:ext:signed": "cd addon && web-ext sign",
+        "build:dev": "yarn run build:js:dev && yarn run build:ext:unsigned",
+        "build:prod:unsigned": "yarn run build:js:prod && yarn run build:ext:unsigned",
+        "build:prod:signed": "yarn run build:js:prod && yarn run build:ext:signed",
+        "build": "yarn run build:dev",
         "start:firefox": "webpack watch",
         "start:chromium": "webpack watch --env chromium",
         "start": "yarn run start:firefox"
@@ -25,8 +26,6 @@
         "webpack": "^5.23.0",
         "webpack-cli": "^4.5.0"
     },
-    "dependencies": {
-        "lodash": "^4.17.20"
-    },
+    "dependencies": {},
     "type": "module"
 }

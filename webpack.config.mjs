@@ -26,7 +26,10 @@ const config = env => ({
             profileCreateIfMissing: true,
             keepProfileChanges: true
         })
-    ]
+    ],
+    node: {
+        global: false
+    }
 });
 
 export default config;
