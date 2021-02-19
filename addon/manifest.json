@@ -1,11 +1,16 @@
 {
     "manifest_version": 2,
     "name": "Blaseball+",
+    "description": "Adds extra functionality to the Blaseball interface. Icon from game-icons.net.",
     "version": "1.0",
     "content_scripts": [
         {
             "matches": ["*://*.blaseball.com/*"],
             "js": ["content_script.js"]
         }
-    ]
+    ],
+    "icons": {
+        "48": "icon.svg",
+        "96": "icon.svg"
+    }
 }
