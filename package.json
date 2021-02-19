@@ -1,0 +1,27 @@
+{
+    "name": "blaseball-plus",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build:js": "webpack",
+        "build:unsigned:ext": "cd addon && web-ext build",
+        "build:signed:ext": "cd addon && web-ext build",
+        "build:unsigned": "npm run build:js && npm run build:unsigned:ext",
+        "build:signed": "npm run build:js && npm run build:signed:ext",
+        "build": "npm run build:unsigned",
+        "start": "webpack watch"
+    },
+    "author": "leo60228",
+    "license": "GPL-2.0-only",
+    "devDependencies": {
+        "@leo60228/web-ext-webpack-plugin": "^1.0.1",
+        "eslint": "^7.20.0",
+        "web-ext": "^5.5.0",
+        "webpack": "^5.23.0",
+        "webpack-cli": "^4.5.0"
+    },
+    "dependencies": {},
+    "type": "module"
+}
