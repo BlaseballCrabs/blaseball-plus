@@ -13,6 +13,7 @@
         "build:prod:unsigned": "yarn run build:js:prod && yarn run build:ext:unsigned",
         "build:prod:signed": "yarn run build:js:prod && yarn run build:ext:signed",
         "build": "yarn run build:dev",
+        "build:src": "shopt -s extglob\nrm -f addon/web-ext-artifacts/source.tar.gz && tar -czvf addon/web-ext-artifacts/source.tar.gz !(node_modules|addon) addon/!(web-ext-artifacts|*.js*)",
         "start:firefox": "webpack watch",
         "start:chromium": "webpack watch --env chromium",
         "start": "yarn run start:firefox"
