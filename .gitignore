@@ -1,3 +1,4 @@
 .ff-profile/
 node_modules/
 *.log
+.direnv
