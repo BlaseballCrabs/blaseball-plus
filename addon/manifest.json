@@ -1,5 +1,11 @@
 {
     "manifest_version": 2,
+    "author": "leo60228",
+    "developer": {
+        "name": "leo60228",
+        "url": "https://leo60228.space"
+    },
+    "homepage_url": "https://github.com/leo60228/blaseball-plus",
     "name": "Blaseball+",
     "description": "Adds extra functionality to the Blaseball interface. Icon from game-icons.net.",
     "version": "1.0.1",
