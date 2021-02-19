@@ -16,7 +16,11 @@ const config = env => ({
         filename: '[name].js'
     },
     plugins: [
-        new WebExtWebpackPlugin(addonDir, {
+        new WebExtWebpackPlugin(addonDir, env.chromium ? {
+            target: 'chromium',
+            startUrl: ['www.blaseball.com']
+        } : {
+            target: 'firefox-desktop',
             startUrl: ['www.blaseball.com'],
             firefoxProfile: resolve(cwd, '.ff-profile'),
             profileCreateIfMissing: true,

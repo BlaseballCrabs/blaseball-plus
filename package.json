@@ -9,10 +9,12 @@
         "build:prod:js": "webpack --env production",
         "build:unsigned:ext": "cd addon && web-ext build --overwrite-dest",
         "build:signed:ext": "cd addon && web-ext sign",
-        "build:unsigned": "npm run build:dev:js && npm run build:unsigned:ext",
-        "build:signed": "npm run build:prod:js && npm run build:signed:ext",
-        "build": "npm run build:unsigned",
-        "start": "webpack watch"
+        "build:unsigned": "yarn run build:dev:js && yarn run build:unsigned:ext",
+        "build:signed": "yarn run build:prod:js && yarn run build:signed:ext",
+        "build": "yarn run build:unsigned",
+        "start:firefox": "webpack watch",
+        "start:chromium": "webpack watch --env chromium",
+        "start": "yarn run start:firefox"
     },
     "author": "leo60228",
     "license": "GPL-2.0-only",

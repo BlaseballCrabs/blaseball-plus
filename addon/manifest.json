@@ -10,7 +10,7 @@
         }
     ],
     "icons": {
-        "48": "icon.svg",
-        "96": "icon.svg"
+        "48": "icon.png",
+        "96": "icon@2x.png"
     }
 }

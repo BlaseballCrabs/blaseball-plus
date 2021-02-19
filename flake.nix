@@ -8,7 +8,7 @@
         pkgs = nixpkgs.legacyPackages.${system};
       in {
         devShell = pkgs.mkShell {
-          nativeBuildInputs = with pkgs; [ nodejs_latest nodePackages_latest.yarn ];
+          nativeBuildInputs = with pkgs; [ nodejs_latest nodePackages_latest.yarn firefox chromium ];
         };
       }
     );
