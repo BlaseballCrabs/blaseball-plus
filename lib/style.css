@@ -19,3 +19,9 @@
 .Player-Info-Line-Link:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 1080px) {
+    div.Player-Info-Line {
+        grid-template-columns: minmax(120px, min-content) auto;
+    }
+}
