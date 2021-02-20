@@ -25,3 +25,25 @@
         grid-template-columns: minmax(120px, min-content) auto;
     }
 }
+
+.Player-Info-Line-Raw {
+    font-family: var(--font-family-monospace);
+    font-size: 16px;
+    text-align: center;
+}
+
+div.Player-Info-Line-Id {
+    font-size: 14px;
+}
+
+div.Player-Info-Line {
+    grid-template-columns: 180px auto min-content;
+}
+
+div.Player-Info-Line-Triple {
+    grid-template-columns: 180px 5fr 6fr;
+}
+
+.Player-Info-Line-Category {
+    text-align: center;
+}
