@@ -8,7 +8,7 @@
     "homepage_url": "https://github.com/leo60228/blaseball-plus",
     "name": "Blaseball+",
     "description": "Adds extra functionality to the Blaseball interface. Icon from game-icons.net.",
-    "version": "1.3.0",
+    "version": "1.3.1",
     "content_scripts": [
         {
             "matches": ["*://*.blaseball.com/*"],
