@@ -5,3 +5,17 @@
     line-height: 1.3em;
     margin-top: 2px;
 }
+
+.Player-Info-Line-Button {
+    color: #666;
+}
+
+.Player-Info-Line-Link {
+    text-decoration: underline;
+    color: #5988ff;
+    text-shadow: 0 0 10px #5988ff;
+}
+
+.Player-Info-Line-Link:hover {
+    text-decoration: underline;
+}
