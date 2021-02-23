@@ -47,3 +47,8 @@ div.Player-Info-Line-Triple {
 .Player-Info-Line-Category {
     text-align: center;
 }
+
+.NoBigDeal {
+    margin: 2em 0;
+    height: auto;
+}
