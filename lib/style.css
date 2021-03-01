@@ -36,7 +36,7 @@ div.Player-Info-Line-Id {
     font-size: 14px;
 }
 
-div.Player-Info-Line {
+li.Player-Info-Line {
     grid-template-columns: 180px auto min-content;
 }
 
