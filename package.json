@@ -30,7 +30,8 @@
         "webpack-cli": "^4.5.0"
     },
     "dependencies": {
-        "@popperjs/core": "^2.8.6"
+        "@popperjs/core": "^2.8.6",
+        "camelcase": "^6.2.0"
     },
     "type": "module"
 }
