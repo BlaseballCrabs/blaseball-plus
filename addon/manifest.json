@@ -13,11 +13,6 @@
         {
             "matches": ["*://*.blaseball.com/*"],
             "js": ["content_script.js"]
-        },
-        {
-            "matches": ["*://*.blaseball.com/*"],
-            "js": ["early_content_script.js"],
-            "run_at": "document_start"
         }
     ],
     "icons": {

@@ -10,7 +10,6 @@ const config = env => ({
     devtool: env.production ? 'source-map' : 'eval-source-map',
     entry: {
         content_script: './lib/content.js',
-        early_content_script: './lib/earlyContent.js',
     },
     output: {
         path: addonDir,
