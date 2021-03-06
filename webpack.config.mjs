@@ -7,9 +7,10 @@ const addonDir = resolve(cwd, 'addon');
 
 const config = env => ({
     mode: env.production ? 'production' : 'development',
-    devtool: env.production ? 'source-map' : 'eval-source-map',
+    devtool: env.production ? 'source-map' : 'cheap-source-map',
     entry: {
         content_script: './lib/content.js',
+        options_page: './lib/optionsPage.js',
     },
     output: {
         path: addonDir,

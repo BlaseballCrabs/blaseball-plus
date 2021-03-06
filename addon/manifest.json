@@ -15,8 +15,18 @@
             "js": ["content_script.js"]
         }
     ],
+    "permissions": ["storage"],
+    "options_ui": {
+        "browser_style": true,
+        "page": "options_page.html"
+    },
     "icons": {
         "48": "icon.png",
         "96": "icon@2x.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "{bc4e0acf-acd5-4c45-b7af-699f6734d1ad}"
+        }
     }
 }
