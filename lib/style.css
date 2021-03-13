@@ -78,6 +78,7 @@ div.Player-Info-Line-Triple {
     bottom: 0;
     right: 0;
     white-space: nowrap;
+    text-align: center;
 }
 
 #root div.ModalForm {
