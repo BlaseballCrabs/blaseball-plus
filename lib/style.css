@@ -49,31 +49,31 @@ div.Player-Info-Line-Triple {
     text-align: center;
 }
 
-#root div.ModalForm-Form-Inputs-Amount {
+#root div.ModalForm-Form-Inputs-Amount.HalfMax {
     display: grid;
     grid-template-columns: 1fr min-content;
     grid-template-rows: min-content max-content;
 }
 
-#root .ModalForm-Form-Inputs-Amount > * {
+#root .ModalForm-Form-Inputs-Amount.HalfMax > * {
     grid-column: 1 / 3;
 }
 
-#root div.ModalForm-Form-Inputs-Amount input[type="range"] {
+#root div.ModalForm-Form-Inputs-Amount.HalfMax input[type="range"] {
     height: auto;
     width: 100%;
     position: static;
     grid-column: 1;
 }
 
-#root div.ModalForm-Form-Inputs-Amount-MaxContainer {
+#root div.ModalForm-Form-Inputs-Amount.HalfMax div.ModalForm-Form-Inputs-Amount-MaxContainer {
     display: flex;
     flex-direction: column;
     gap: 4px;
     grid-column: 2;
 }
 
-#root .ModalForm-Form-Inputs-Amount-Max {
+#root div.ModalForm-Form-Inputs-Amount.HalfMax .ModalForm-Form-Inputs-Amount-Max {
     position: static;
     bottom: 0;
     right: 0;
@@ -83,4 +83,8 @@ div.Player-Info-Line-Triple {
 #root div.ModalForm {
     max-height: auto;
     overflow: auto;
+}
+
+#root div.BatchBuy div.ModalForm-Form-Amount {
+    overflow: visible;
 }
