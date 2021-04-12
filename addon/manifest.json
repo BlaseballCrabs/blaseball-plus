@@ -15,7 +15,10 @@
             "js": ["content_script.js"]
         }
     ],
-    "permissions": ["storage"],
+    "background": {
+        "scripts": ["background_script.js"]
+    },
+    "permissions": ["storage", "webRequest", "webRequestBlocking", "*://*.blaseball.com/*", "https://d35iw2jmbg6ut8.cloudfront.net/*"],
     "options_ui": {
         "browser_style": true,
         "page": "options_page.html"
