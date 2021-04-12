@@ -1,10 +1,6 @@
 import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 import WebExtWebpackPlugin from '@leo60228/web-ext-webpack-plugin';
-import { createRequire } from 'module';
-import webpack from 'webpack';
-
-const require = createRequire(import.meta.url);
 
 const cwd = dirname(fileURLToPath(import.meta.url));
 const addonDir = resolve(cwd, 'addon');
@@ -31,10 +27,6 @@ const config = env => ({
             firefoxProfile: resolve(cwd, '.ff-profile'),
             profileCreateIfMissing: true,
             keepProfileChanges: true
-        }),
-        new webpack.ProvidePlugin({
-            process: 'process/browser',
-            Buffer: 'buffer/'
         })
     ],
     node: {
@@ -51,13 +43,6 @@ const config = env => ({
                 type: 'asset/source'
             }
         ]
-    },
-    resolve: {
-        fallback: {
-            path: require.resolve('path-browserify'),
-            assert: require.resolve('assert/'),
-            fs: false
-        }
     }
 });
 
