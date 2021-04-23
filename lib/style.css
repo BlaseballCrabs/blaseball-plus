@@ -1,9 +1,36 @@
+.Team-Header {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: start;
+    column-gap: 5px;
+}
+
+.Team-LogoLine-Wrapper, .Team-Card-Wrapper, .Team-Header > .ModalItem-Name-Wrapper {
+    display: contents;
+}
+
+.Team-LogoLine-Wrapper > .ModalItem-Name-Wrapper {
+    grid-column: 2 / 4;
+    margin-left: 5px;
+}
+
+.Team-Card {
+    grid-column: 2;
+    margin: 0.5px 0 0 0;
+}
+
+.ModalItem-Button-Flute-Current {
+    margin-left: 0;
+    margin-right: -5px;
+}
+
 .Team-Abslve {
     font-family: "Lora", "Courier New", monospace, serif;
     font-size: 14px;
     color: #aaa;
     line-height: 1.3em;
     margin-top: 2px;
+    justify-self: center;
 }
 
 .Player-Info-Line-Button {
