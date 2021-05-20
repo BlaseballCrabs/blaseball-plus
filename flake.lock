@@ -31,10 +31,27 @@
         "type": "github"
       }
     },
+    "nixpkgsEdge": {
+      "locked": {
+        "lastModified": 1621518177,
+        "narHash": "sha256-sbpN+Dp2/c3ayyqUGseUckKSThw569jinDcvljTbXu4=",
+        "owner": "leo60228",
+        "repo": "nixpkgs",
+        "rev": "b59cdb74404cc609e9a2180b0a9e03b950276638",
+        "type": "github"
+      },
+      "original": {
+        "owner": "leo60228",
+        "ref": "edge",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "nixpkgsEdge": "nixpkgsEdge"
       }
     }
   },

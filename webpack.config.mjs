@@ -20,6 +20,8 @@ const config = env => ({
     plugins: [
         new WebExtWebpackPlugin(addonDir, env.chromium ? {
             target: 'chromium',
+            args: ['--force-device-scale-factor=2'],
+            chromiumBinary: env.chromium === true ? undefined : env.chromium,
             startUrl: ['www.blaseball.com']
         } : {
             target: 'firefox-desktop',

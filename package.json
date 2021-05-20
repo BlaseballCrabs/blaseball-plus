@@ -16,6 +16,7 @@
         "build:src": "shopt -s extglob\nrm -f addon/web-ext-artifacts/source.tar.gz && tar -czvf addon/web-ext-artifacts/source.tar.gz !(node_modules|addon) addon/!(web-ext-artifacts|*.js*)",
         "start:firefox": "webpack watch",
         "start:chromium": "webpack watch --env chromium",
+        "start:edge": "webpack watch --env chromium=microsoft-edge-beta",
         "start": "yarn run start:firefox"
     },
     "author": "leo60228",
